@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+export JAVA_SYS_PROPS="-Djava.util.logging.config.file=/config/logging.properties -Dconfig.file=/config/jicofo.conf"
+
+cd /usr/share/jicofo/ || exit
+exec /usr/share/jicofo/jicofo.sh --domain="$XMPP_DOMAIN" --host="$XMPP_SERVER" --user_name="$JICOFO_AUTH_USER" --user_domain="$XMPP_AUTH_DOMAIN" --user_password="$JICOFO_AUTH_PASSWORD"
