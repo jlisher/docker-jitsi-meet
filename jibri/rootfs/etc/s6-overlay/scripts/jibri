@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+# we have to set it, otherwise chrome won't find ~/.asoundrc file
+export HOME=/home/jibri
+
+exec /opt/jitsi/jibri/launch.sh

@@ -1,0 +1,4 @@
+#!/command/execlineb -P
+s6-setuidgid jibri
+with-contenv
+/usr/bin/icewm-session

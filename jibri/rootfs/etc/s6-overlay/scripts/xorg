@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv bash
+
+exec /usr/bin/Xorg -nocursor -noreset  +extension RANDR +extension RENDER -logfile /tmp/xorg.log  -config /etc/jitsi/jibri/xorg-video-dummy.conf ${DISPLAY}
