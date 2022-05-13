@@ -1,0 +1,3 @@
+#!/command/execlineb -P
+s6-setuidgid jvb
+/etc/s6-overlay/scripts/jvb
