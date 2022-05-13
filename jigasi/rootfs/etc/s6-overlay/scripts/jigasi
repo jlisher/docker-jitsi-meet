@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+export JAVA_SYS_PROPS="-Djava.util.logging.config.file=/config/logging.properties"
+
+exec /usr/share/jigasi/jigasi.sh --nocomponent=true --configdir=/ --configdirname=config --min-port="$JIGASI_PORT_MIN" --max-port="$JIGASI_PORT_MAX"
